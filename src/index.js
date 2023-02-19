@@ -7,7 +7,7 @@ import Subtotal from "./components/Subtotal";
 import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
 import Header from "./components/Header";
-import Sucess from "./pages/Success";
+import Success from "./pages/Success";
 
 const Body = styled.div`
   padding: 0;
