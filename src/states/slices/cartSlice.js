@@ -4,11 +4,12 @@ import { createSlice } from "@reduxjs/toolkit"
 export const slice = createSlice({
     name: 'cart',
     initialState: {
-        items: []
+        items: [],
+        isLoaded: false,
     },
     reducers: {
         setItems( state , { payload }){
-            state.items = payload
+            state.items = payload;
         }
     }
 }
