@@ -2,27 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import styled from "styled-components";
 import Subtotal from "./components/Subtotal";
 import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
 import Header from "./components/Header";
 import Success from "./pages/Success";
-
-const Body = styled.div`
-  padding: 0;
-  background-color: #f5f5f5;
-  height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-`;
+import { Provider } from "react-redux";
+import store from "./states/store";
+import {Body} from './style'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
+
     <Body>
       <Router>
         <Routes>
@@ -36,5 +29,6 @@ root.render(
         </Routes>
       </Router>
     </Body>
+    </Provider>
   </React.StrictMode>
 );
