@@ -5,15 +5,18 @@ export const slice = createSlice({
     name: 'cart',
     initialState: {
         items: [],
-        isLoaded: false,
+        prices: {}
     },
     reducers: {
         setItems( state , { payload }){
             state.items = payload;
+        },
+        setPrices( state, {payload}){
+            state.prices = payload
         }
     }
 }
 )
-export const { setItems } = slice.actions
+export const { setItems, setPrices } = slice.actions
 
 export default slice.reducer

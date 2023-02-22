@@ -7,10 +7,7 @@ function Cart() {
     <div>
         <div className='elements'>
         {cartItems.map((iten) => <li>{iten.product.name}</li>)}
-
         </div>
-        <div>Prices</div>
-        <button>Next</button>
     </div>
   )
 }

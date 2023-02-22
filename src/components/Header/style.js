@@ -10,6 +10,7 @@ export const StyledHeader = styled.div`
   background-color: #fff;
   box-shadow: 0px 2px 4px 0px #0000001a;
   height: 37px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;

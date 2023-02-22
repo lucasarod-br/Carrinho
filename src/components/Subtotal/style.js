@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 export const StyleSubtotal = styled.div`
     color: #000;
-    justify-self: flex-end;
+    /* justify-self: flex-end;
     position: fixed;
   bottom: 0;
-  left: 0;
+  left: 0; */
   width: 100vw;
+  max-width: 624px;
   height: 33vh;
   display: flex;
   flex-direction: column;
