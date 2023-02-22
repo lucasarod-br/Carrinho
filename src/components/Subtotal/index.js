@@ -12,6 +12,7 @@ function Subtotal() {
 
   const location = useLocation()
   const redirect = location.pathname === '/cart' ?  'payment' :  'success'
+  const text = location.pathname === '/cart' ? 'Seguir para o pagamento' : 'Finalizar pedido'
   
   return (
     <>
@@ -36,7 +37,7 @@ function Subtotal() {
           <Text bold>R${format(total)}</Text>
         </Line>
         <Button to={`/${redirect}`}>
-            Seguir para o pagamento
+            {text}
         </Button>
       </StyleSubtotal>
     </>

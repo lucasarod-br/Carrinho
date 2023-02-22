@@ -1,8 +1,10 @@
 import React from 'react'
+import Products from '../../components/Products'
 
 const Success = () => {
   return (
-    <div>Success</div>
+    <Products price={false}/>
+
   )
 }
 

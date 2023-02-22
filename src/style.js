@@ -11,6 +11,7 @@ padding: 0;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: #F5F5F5;
 
   font-family: Arial, Helvetica, sans-serif;
   

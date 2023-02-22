@@ -18,4 +18,5 @@ export const Text = styled.span`
     color: ${setColor};
     font-weight: ${isBold};
     font-size: ${setSize};
+    text-align: justify;
 `

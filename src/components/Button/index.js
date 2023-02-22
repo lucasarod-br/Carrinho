@@ -14,20 +14,19 @@ background: ${ props => props.color ? props.color : "#9222DC"};
 border-radius: 4px;
 border: none;
 margin-top: .5rem;
-color: white;
 font-size: 18px;
 font-weight: 700;
+max-width: 624px;
 width: 100%;
-text-decoration: none;
 `
 
 function Button( {to, children}) {
   return (
-    <Link to={to} style={{"textDecoration": "none"}}>
     <StyleBtn>
+      <Link to={to} style={{"textDecoration": "none", "color": "white"}}>
         {children}
-    </StyleBtn>
     </Link>
+    </StyleBtn>
   )
 }
 
