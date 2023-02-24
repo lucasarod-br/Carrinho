@@ -6,17 +6,31 @@ const setColor = (props) => {
 }
 
 const setSize = (props) => {
-    return props.size ? props.size : "14px"
+    if (window.innerWidth <= 375) {
+        return props.size ? props.size : "14"
+    }
+    else if (window.innerWidth <= 768) {
+        return props.size ? props.size *1.1 : "16"
+        
+    }
+    else if (window.innerWidth <= 1024) {
+        return props.size ?  props.size * 1.2 : '16';
+    }
+    else {
+        return props.size ?  props.size * 1.4 : '20';
+    }
 }
 
 const isBold = (props) => {
     return props.bold ? "700" : "400"
 }
 
-
+  
 export const Text = styled.span`
+
     color: ${setColor};
     font-weight: ${isBold};
-    font-size: ${setSize};
-    text-align: justify;
+    font-size: ${setSize}px;
+
 `
+

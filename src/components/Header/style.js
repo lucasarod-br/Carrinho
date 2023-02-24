@@ -16,7 +16,7 @@ export const StyledHeader = styled.div`
   align-items: center;
   gap: 1rem;
   @media (min-width: 768px) {
-    height: 52px;
+    height: 45px;
     gap: 2rem;
   }
 
@@ -27,10 +27,8 @@ export const Tab = styled.span`
   height: 100%;
   display: flex;
   align-items: center;
-  font-size: 14px;
   border-bottom: ${props => props.active ? "4px" : "2px"} solid ${isActiveColor};
   @media (min-width: 768px) {
-  font-size: 20px;
-  border-bottom: ${props => props.active ? "8px" : "3.5px"} solid ${isActiveColor};
+  border-bottom: ${props => props.active ? "6px" : "3px"} solid ${isActiveColor};
   }
 `;

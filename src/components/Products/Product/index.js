@@ -7,6 +7,9 @@ const StyledProduct =styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+    max-width: 460px;
+    width: 95vw;
+    margin: .4rem 0;
 `
 
 function Product( { img, name, maxPrice, originalPrice, price} ) {
@@ -17,7 +20,7 @@ function Product( { img, name, maxPrice, originalPrice, price} ) {
     <StyledProduct>
         <img src={img} alt={name} />
         
-        <Text size='12px'>{name}</Text>
+        <Text size='12'>{name}</Text>
 
         {price && ( prices ? <Text bold>R${maxPrice.toFixed(2)}</Text> : <div style={{'display': 'flex', 'flexDirection': 'column'}}> <Text color='#9B9B9B'>R$<s>{maxPrice.toFixed(2)}</s></Text><Text bold >R${originalPrice.toFixed(2)}</Text>  </div>)}
 

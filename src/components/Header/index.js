@@ -1,3 +1,4 @@
+import { Text } from 'components/Text/style'
 import React from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { StyledHeader, Tab } from './style'
@@ -15,9 +16,9 @@ function Header() {
   return (
     <>
     <StyledHeader>
-            <Tab {...activate('/cart')} >Sacola</Tab>
-            <Tab {...activate('/payment')}>Pagamento</Tab>
-            <Tab {...activate('/success')}>Confirmação</Tab>
+            <Tab {...activate('/cart')} ><Text>Sacola</Text></Tab>
+            <Tab {...activate('/payment')}><Text>Pagamento</Text></Tab>
+            <Tab {...activate('/success')}><Text>Confirmação</Text></Tab>
     </StyledHeader>
 
     {<Outlet/>}

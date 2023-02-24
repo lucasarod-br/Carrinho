@@ -23,8 +23,8 @@ root.render(
             <Route path="/" element={<Subtotal />}>
               <Route path="cart" element={<Cart />} />
               <Route path="payment" element={<Payment />} />
-            </Route>
             <Route path="success" element={<Success/>}/>
+            </Route>
           </Route>
         </Routes>
       </Router>

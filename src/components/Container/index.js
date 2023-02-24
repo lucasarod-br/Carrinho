@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    
-    max-width: 680px; 
-    padding: 2rem 1rem;
-    border: 1px solid #CCCCCC;
-    border-radius: 4px;
-    background-color: #fff;
-    margin: auto 4px;
-`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 98vw;
+  max-width: 680px;
+  padding: 10px 5px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: auto auto;
+`;
