@@ -13,7 +13,7 @@ const StyledProduct =styled.div`
 
     img {
         height: 14vh;
-        
+         
     }
 `
 
