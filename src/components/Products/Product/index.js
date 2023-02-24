@@ -10,6 +10,10 @@ const StyledProduct =styled.div`
     max-width: 460px;
     width: 95vw;
     margin: .4rem 0;
+
+    img {
+        width: 15%;
+    }
 `
 
 function Product( { img, name, maxPrice, originalPrice, price} ) {
@@ -19,7 +23,7 @@ function Product( { img, name, maxPrice, originalPrice, price} ) {
 
     
     <StyledProduct>
-        <img src={img} alt={name} width={w <= 425 ? '58px': w <= 790 ? '62px' : w <= 1048 ? '72px' : '100px' }/>
+        <img src={img} alt={name}/>
         
         <Text size='12' style={{'display': 'inline-block'}}>{name}</Text>
 
