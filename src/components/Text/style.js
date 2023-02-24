@@ -14,10 +14,10 @@ const setSize = (props) => {
         
     }
     else if (window.innerWidth <= 1024) {
-        return props.size ?  props.size * 1.2 : '16';
+        return props.size ?  props.size * 1.2 : '18';
     }
     else {
-        return props.size ?  props.size * 1.4 : '20';
+        return props.size ?  props.size * 1.22 : '19';
     }
 }
 

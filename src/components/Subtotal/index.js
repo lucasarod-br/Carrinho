@@ -16,20 +16,24 @@ function Subtotal() {
    switch (location.pathname) {
     case '/success':
       datasButton['text'] = 'Voltar ao inicio do protótipo'
+      datasButton['color'] = '#000000'
       datasButton['to'] = 'cart'
       break
     case '/payment':
       datasButton['text'] = 'Finalizar pedido'
+      datasButton['color'] = '#9222DC'
       
       break
     case '/cart':
       datasButton['text'] = 'Seguir para o pagamento'
-      datasButton['color'] = '#000'
+      datasButton['color'] = '#9222DC'
 
       datasButton['to'] = 'payment'
       break
     default:
       datasButton['text'] = 'Seguir para a sacola'
+      datasButton['color'] = '#9222DC'
+
       datasButton['to'] = 'cart'
       break
    } 
@@ -55,7 +59,7 @@ function Subtotal() {
           <Text bold>Subtotal</Text>
           <Text bold>R${format(total)}</Text>
         </Line>
-        <Button to={`/${datasButton.to && datasButton.to}`} color={datasButton.color && datasButton.color}>
+        <Button to={`/${datasButton.to && datasButton.to}`} color={`${datasButton.color && datasButton.color}`}>
             {datasButton.text}
         </Button>
       </StyleSubtotal>

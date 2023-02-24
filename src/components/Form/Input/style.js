@@ -13,7 +13,7 @@ export const StyledInput = styled.div`
 
   input {
     border-radius: 4px;
-    padding: 14px;
+    padding: 11px;
     border: 1px solid #cccccc;
     width: ${(props) => (props.short ? "85%" : "95%")};
 

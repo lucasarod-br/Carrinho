@@ -6,13 +6,14 @@ export const StyleSubtotal = styled.div`
   bottom: 0;
   left: 0; */
   width: 100vw; 
-  height: 35vh;
+  height: 33vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
-  padding: 1.5rem 1rem;
+  gap: .3rem;
+  padding: 1.2rem 1rem;
   box-sizing: border-box;
-  background-color: #fff
+  background-color: #fff;
+  margin-top: 4px;
 `

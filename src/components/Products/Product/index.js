@@ -12,13 +12,13 @@ const StyledProduct =styled.div`
     margin: .4rem 0;
 
     img {
-        width: 15%;
+        height: 14vh;
+        
     }
 `
 
 function Product( { img, name, maxPrice, originalPrice, price} ) {
     const prices = maxPrice === originalPrice
-    const w = window.innerWidth 
     return (
 
     

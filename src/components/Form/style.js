@@ -6,10 +6,11 @@ export const StyledForm = styled.form`
     justify-content: center;
     align-items: center;
 
-    gap: 14px;
+    gap: 10px;
     box-sizing: border-box;
     width: 90vw;
     height: 45vh;
+    margin-bottom: 4px;
     
     div {
         

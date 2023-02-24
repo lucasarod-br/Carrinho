@@ -1,24 +1,15 @@
 import { Container } from "components/Container";
 import { Text } from "components/Text/style";
 import React from "react";
-import { useForm } from "react-hook-form";
+
 import Input from "./Input";
 import { StyledForm } from "./style";
 
 function Form() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data) => console.log(data);
-
   return (
-    <Container style={{'gap': '0.5rem'}}>
-        <Text   size="20">Cartão de crédito</Text>
-      <StyledForm onSubmit={handleSubmit(onSubmit)}>
+    <Container style={{'gap': '0.3rem'}}>
+        <Text  size="18">Cartão de crédito</Text>
+      <StyledForm onSubmit={''}>
         <Input
           name={"Número"}
           type="text"
