@@ -17,7 +17,7 @@ function Form() {
 
   return (
     <Container style={{'gap': '0.5rem'}}>
-        <Text size="32">Carrinho</Text>
+        <Text   size="20">Cartão de crédito</Text>
       <StyledForm onSubmit={handleSubmit(onSubmit)}>
         <Input
           name={"Número"}

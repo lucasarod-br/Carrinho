@@ -24,6 +24,8 @@ function Subtotal() {
       break
     case '/cart':
       datasButton['text'] = 'Seguir para o pagamento'
+      datasButton['color'] = '#000'
+
       datasButton['to'] = 'payment'
       break
     default:
@@ -53,7 +55,7 @@ function Subtotal() {
           <Text bold>Subtotal</Text>
           <Text bold>R${format(total)}</Text>
         </Line>
-        <Button to={`/${datasButton.to && datasButton.to}`}>
+        <Button to={`/${datasButton.to && datasButton.to}`} color={datasButton.color && datasButton.color}>
             {datasButton.text}
         </Button>
       </StyleSubtotal>

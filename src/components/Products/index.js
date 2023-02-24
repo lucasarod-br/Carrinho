@@ -13,7 +13,7 @@
         {cartItems.map((iten) => (
           <Product 
               key={iten.product.sku} 
-              img={iten.product.imageObjects[0].thumbnail}
+              img={iten.product.imageObjects[0].small}
               name={iten.product.name}
               price={price}
               maxPrice={price && iten.product.priceSpecification.maxPrice}

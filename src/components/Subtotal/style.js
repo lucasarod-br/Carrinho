@@ -6,7 +6,7 @@ export const StyleSubtotal = styled.div`
   bottom: 0;
   left: 0; */
   width: 100vw; 
-  height: 33vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
