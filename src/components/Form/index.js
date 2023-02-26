@@ -27,14 +27,9 @@ function Form() {
 
   const validate = (data) => {
     dispatch(setValues(data))
-    if (errors.length > 0) {
-      console.log("erro");
-    } else {
+    if (errors.length === 0) {
       navigate("/success");
-      console.log(data);
-    }
-    console.log("acabou");
-  };
+  };}
 
   return (
     <Container style={{ 'gap': "0rem" }}>
