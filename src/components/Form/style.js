@@ -10,7 +10,6 @@ export const StyledForm = styled.form`
     box-sizing: border-box;
     width: 90vw;
     height: 45vh;
-    margin-bottom: 4px;
     
     div {
         
