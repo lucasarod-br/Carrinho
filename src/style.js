@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 export const Body = styled.div`
 padding: 0;
-  //height: 100vh;
-  max-width: 100vw;
+  max-width: 100%;
   box-sizing: border-box;
-min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
