@@ -5,11 +5,13 @@ export const StyleSubtotal = styled.div`
     position: fixed;
   bottom: 0;
   left: 0; */
-  width: 100vw; 
+  
+  width: 100%; 
   height: 33vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   justify-content: center;
   gap: .5rem;
   padding: 1.2rem 1rem;

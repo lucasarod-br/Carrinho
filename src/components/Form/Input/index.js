@@ -12,13 +12,17 @@ function Input({
   erro,
   errorMessage,
 }) {
+    
   return (
     <StyledInput short={short}>
       <label htmlFor={name}>
         <Text color={"#515151"}>{label}</Text>
       </label>
       <input
-        {...register(name, { required: true, pattern: pattern })}
+        {...register(name, {
+          required: true,
+          pattern: pattern
+        })}
         style={erro && { borderColor: "#DE1616" }}
         name={name}
         type={"text"}

@@ -33,7 +33,7 @@ function Form() {
 
   return (
     <Container style={{ 'gap': "0rem" }}>
-      <Text size="18">Cartão de crédito</Text>
+      <Text style={{'alignSelf': 'flex-start', marginLeft: '28px', 'marginBottom': '16px'}} size="18">Cartão de crédito</Text>
       <StyledForm onSubmit={handleSubmit(validate)}>
         <Input
           register={register}
@@ -67,7 +67,7 @@ function Form() {
           />
           <Input
             register={register}
-            label={"Data de validade"}
+            label={"CVV"}
             name={"cvv"}
             placeholder={"000"}
             type="text"

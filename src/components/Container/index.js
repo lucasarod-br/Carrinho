@@ -8,9 +8,9 @@ export const Container = styled.div`
   align-items: center;
   width: 98%;
   max-width: 680px;
-  padding: 10px 0px;
+  padding: 30px 0px;
   border: 1px solid #cccccc;
   border-radius: 4px;
   background-color: #fff;
-  margin: 20px auto;
+  margin: 16px auto;
 `;

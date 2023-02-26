@@ -4,16 +4,23 @@ import { Text } from '../../Text/style'
 
 const StyledProduct =styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: ${ props => props.price ? 'space-evenly' : 'space-between'};
     align-items: center;
-    gap: 15px;
-    max-width: 460px;
-    width: 95vw;
-    margin: .4rem 0;
+   gap:10%;
+    width: 85%;
+    text-align: start;
+    vertical-align: middle;
 
     img {
-        height: 14vh;
-         
+        height: 14vh;    
+    }
+
+    span {
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
     }
 `
 

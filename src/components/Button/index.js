@@ -7,7 +7,7 @@ const StyleBtn = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  cursor: pointer;
   //padding: 16px 8px;
   background: ${(props) => props.color};
   border-radius: 4px;
