@@ -10,7 +10,7 @@ import Input from "./Input";
 import { StyledForm } from "./style";
 
 function Form() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const {
     register,
@@ -26,14 +26,23 @@ function Form() {
   });
 
   const validate = (data) => {
-    dispatch(setValues(data))
-  
-      navigate("/success");
-  }
+    dispatch(setValues(data));
+
+    navigate("/success");
+  };
 
   return (
-    <Container style={{ 'gap': "0rem" }}>
-      <Text style={{'alignSelf': 'flex-start', marginLeft: '28px', 'marginBottom': '16px'}} size="18">Cartão de crédito</Text>
+    <Container style={{ gap: "0rem" }}>
+      <Text
+        style={{
+          alignSelf: "flex-start",
+          marginLeft: "28px",
+          marginBottom: "16px",
+        }}
+        size="18"
+      >
+        Cartão de crédito
+      </Text>
       <StyledForm onSubmit={handleSubmit(validate)}>
         <Input
           register={register}
@@ -54,7 +63,9 @@ function Form() {
           errorMessage="insira um nome válido"
           pattern={/^[A-Za-zÀ-ÖØ-öø-ÿ]+([ ][A-Za-zÀ-ÖØ-öø-ÿ]+)*$/}
         />
-        <div style={{'gap':  '8px', 'justify-content': 'space-between'}}>
+        
+        
+        <div style={{width: '88vw' , gap: "8px", "justifyContent": "space-between",  }}>
           <Input
             placeholder={"MM/AA"}
             register={register}

@@ -1,26 +1,7 @@
 import { Text } from "components/Text/style";
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-const StyleBtn = styled.button`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  //padding: 16px 8px;
-  background: ${(props) => props.color};
-  border-radius: 4px;
-  border: none;
-  margin-top: 0.1rem;
-  max-width: 624px;
-  width: 100%;
-  height: 50px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import { StyleBtn } from "./style";
 
 const handleClick = () => {
   const botao = document.getElementById("submit");

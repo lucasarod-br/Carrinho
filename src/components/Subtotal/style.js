@@ -1,21 +1,15 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 export const StyleSubtotal = styled.div`
-    color: #000;
-    /* justify-self: flex-end;
-    position: fixed;
-  bottom: 0;
-  left: 0; */
+  box-sizing: border-box;
   
-  width: 100%; 
+  width: 100%;
   height: 33vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   justify-content: center;
-  gap: .5rem;
-  padding: 1.2rem 1rem;
-  box-sizing: border-box;
-  background-color: #fff;
-  margin-top: 4px;
-`
+  gap: 0.5rem;
+  padding: 1rem;
+  color: black;
+  background-color: white;
+`;

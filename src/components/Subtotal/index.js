@@ -7,37 +7,38 @@ import { Line } from "./Line";
 import { StyleSubtotal } from "./style";
 
 function Subtotal() {
-  const { subTotal, shippingTotal, discount, total } = useSelector(state => state.cart.prices)
-  const format = (item) => (item && item.toFixed(2))
+  const { subTotal, shippingTotal, discount, total } = useSelector(
+    (state) => state.cart.prices
+  );
+  const format = (item) => item && item.toFixed(2);
 
-  const location = useLocation()
+  const location = useLocation();
 
-  const datasButton = {}
-   switch (location.pathname) {
-    case '/success':
-      datasButton['text'] = 'Voltar ao inicio do protótipo'
-      datasButton['color'] = '#000000'
-      datasButton['to'] = 'cart'
-      break
-    case '/payment':
-      datasButton['text'] = 'Finalizar pedido'
-      datasButton['color'] = '#9222DC'
-      
-      break
-    case '/cart':
-      datasButton['text'] = 'Seguir para o pagamento'
-      datasButton['color'] = '#9222DC'
+  const datasButton = {};
+  switch (location.pathname) {
+    case "/success":
+      datasButton["text"] = "Voltar ao inicio do protótipo";
+      datasButton["color"] = "#000000";
+      datasButton["to"] = "cart";
+      break;
+    case "/payment":
+      datasButton["text"] = "Finalizar pedido";
+      datasButton["color"] = "#9222DC";
 
-      datasButton['to'] = 'payment'
-      break
+      break;
+    case "/cart":
+      datasButton["text"] = "Seguir para o pagamento";
+      datasButton["color"] = "#9222DC";
+
+      datasButton["to"] = "payment";
+      break;
     default:
-      datasButton['text'] = 'Seguir para a sacola'
-      datasButton['color'] = '#9222DC'
-      datasButton['submit'] = true
-      datasButton['to'] = 'cart'
-      break
-   } 
-
+      datasButton["text"] = "Seguir para a sacola";
+      datasButton["color"] = "#9222DC";
+      datasButton["submit"] = true;
+      datasButton["to"] = "cart";
+      break;
+  }
 
   return (
     <>
@@ -61,14 +62,12 @@ function Subtotal() {
           <Text bold>Subtotal</Text>
           <Text bold>R${format(total)}</Text>
         </Line>
-       
-            <Button to={datasButton.to}  color={datasButton.color}>
-            {datasButton.text}
+
+        <Button to={datasButton.to} color={datasButton.color}>
+          {datasButton.text}
         </Button>
-       
-        
       </StyleSubtotal>
     </>
   );
-  }
+}
 export default Subtotal;
