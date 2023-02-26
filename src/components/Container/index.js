@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   width: 98%;
   max-width: 680px;
-  padding: 10px 4px;
+  padding: 10px 0px;
   border: 1px solid #cccccc;
   border-radius: 4px;
   background-color: #fff;
