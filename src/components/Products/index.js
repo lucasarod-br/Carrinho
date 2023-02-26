@@ -10,7 +10,7 @@ import { Text } from "components/Text/style";
     const cartItems = useSelector((state) => state.cart.items);
 
     return (
-      <Container>
+      <Container style={{'padding': '0'}}>
         {!price && <Text size='20'>Produtos</Text> }
         {cartItems.map((iten) => (
           <Product 
