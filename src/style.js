@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const Body = styled.div`
 padding: 0;
   //height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   box-sizing: border-box;
-
+min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
