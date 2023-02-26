@@ -6,7 +6,7 @@ export const StyledProduct = styled.div`
   justify-content: ${(props) =>
     props.price ? "space-evenly" : "space-around"};
   align-items: center;
-  gap: 10%;
+  gap: 5%;
   width: 85%;
   text-align: start;
   vertical-align: middle;

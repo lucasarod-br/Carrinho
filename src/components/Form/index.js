@@ -36,8 +36,7 @@ function Form() {
       <Text
         style={{
           alignSelf: "flex-start",
-          marginLeft: "28px",
-          marginBottom: "16px",
+          margin: ' 4px auto'
         }}
         size="18"
       >

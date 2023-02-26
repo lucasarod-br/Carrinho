@@ -4,9 +4,11 @@ export const StyledInput = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 3px;
   width: 100%;
-  height: 65px;
+  height:75px;
 
+  
   label {
     white-space: nowrap;
     align-self: flex-start;
@@ -14,7 +16,8 @@ export const StyledInput = styled.div`
 
   input {
     border-radius: 4px;
-    padding: 11px;
+    padding: 14px;
+    padding-right: 0;
     border: 1px solid #cccccc;
     width: ${(props) => (props.short ? "87%" : "95%")};
 

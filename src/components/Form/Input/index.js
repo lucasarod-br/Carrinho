@@ -30,16 +30,16 @@ function Input({
       />
 
       {erro && (
-        <p
+        <Text
+          size='10'
+          color="#DE1616"
           style={{
-            fontSize: "12px",
-            color: "#DE1616",
             alignSelf: "start",
-            margin: "0",
+            margin: "0"
           }}
         >
           {errorMessage}
-        </p>
+        </Text>
       )}
     </StyledInput>
   );
