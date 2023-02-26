@@ -8,7 +8,7 @@ export const StyledForm = styled.form`
 
 
     box-sizing: border-box;
-    gap: 14px;
+    gap: 20px;
     width: 90vw;
 
     
