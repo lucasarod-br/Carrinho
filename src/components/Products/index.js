@@ -1,4 +1,5 @@
   import { Container } from "components/Container";
+import { Text } from "components/Text/style";
   import React from "react";
   import { useSelector } from "react-redux";
   import Product from "./Product";
@@ -10,6 +11,7 @@
 
     return (
       <Container>
+        {!price && <Text size='20'>Produtos</Text> }
         {cartItems.map((iten) => (
           <Product 
               key={iten.product.sku} 

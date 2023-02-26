@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyledInput = styled.div`
-  display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 624px;
+  width: 100%;
+  height: 71px;
 
   label {
     white-space: nowrap;
@@ -15,7 +15,8 @@ export const StyledInput = styled.div`
     border-radius: 4px;
     padding: 11px;
     border: 1px solid #cccccc;
-    width: ${(props) => (props.short ? "85%" : "95%")};
+    width: ${(props) => (props.short ? "87%" : "95%")};
+
 
     :focus {
       box-shadow: 0 0 0 0;
@@ -25,6 +26,10 @@ export const StyledInput = styled.div`
     ::placeholder {
       color: #cccccc;
       font-size: 14px;
+    }
+
+    .error {
+      color: aliceblue;
     }
     @media (min-width: 768px) {
       width: ${(props) => (props.short ? "89%" : "95%")};

@@ -11,7 +11,7 @@ export const StyleSubtotal = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: .3rem;
+  gap: .5rem;
   padding: 1.2rem 1rem;
   box-sizing: border-box;
   background-color: #fff;

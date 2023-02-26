@@ -33,10 +33,12 @@ function Subtotal() {
     default:
       datasButton['text'] = 'Seguir para a sacola'
       datasButton['color'] = '#9222DC'
-
+      datasButton['submit'] = true
       datasButton['to'] = 'cart'
       break
    } 
+
+
   return (
     <>
       {<Outlet />}
@@ -59,12 +61,14 @@ function Subtotal() {
           <Text bold>Subtotal</Text>
           <Text bold>R${format(total)}</Text>
         </Line>
-        <Button to={`/${datasButton.to && datasButton.to}`} color={`${datasButton.color && datasButton.color}`}>
+       
+            <Button to={datasButton.to}  color={datasButton.color}>
             {datasButton.text}
         </Button>
+       
+        
       </StyleSubtotal>
     </>
   );
-}
-
+  }
 export default Subtotal;
