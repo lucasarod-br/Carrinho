@@ -14,7 +14,7 @@ export const StyledForm = styled.form`
     div {
         
         display: flex;
-        width: 90vw;
+        width: 88vw;
         max-width: 624px;
     }
     

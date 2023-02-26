@@ -27,9 +27,9 @@ function Form() {
 
   const validate = (data) => {
     dispatch(setValues(data))
-    if (errors.length === 0) {
+  
       navigate("/success");
-  };}
+  }
 
   return (
     <Container style={{ 'gap': "0rem" }}>
@@ -52,7 +52,7 @@ function Form() {
           placeholder={"Nome impresso no cartão"}
           erro={errors?.name}
           errorMessage="insira um nome válido"
-          pattern={/^[a-zA-Z]+ [a-zA-Z]+$/}
+          pattern={/^[A-Za-zÀ-ÖØ-öø-ÿ]+([ ][A-Za-zÀ-ÖØ-öø-ÿ]+)*$/}
         />
         <div style={{'gap':  '8px', 'justify-content': 'space-between'}}>
           <Input
