@@ -3,14 +3,14 @@ export const StyleSubtotal = styled.div`
   box-sizing: border-box;
   
   width: 100%;
-  height: 40%;
+  min-height: 238px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  bottom: 0;
+  gap: .5rem;
+  padding: 28px 21px;
+
   color: black;
   background-color: white;
 `;

@@ -35,6 +35,7 @@ function Form() {
     <Container>
       <Text
         style={{
+          padding: '14px 0 20px 0',
           margin: ' 0px auto 4px auto'
         }}
         size="18"

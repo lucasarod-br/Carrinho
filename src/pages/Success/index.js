@@ -9,7 +9,7 @@ const Success = () => {
 console.log(card.name)
   return (
     <>
-    <Container style={{'marginBottom': '0', 'gap': '8px'}}>
+    <Container style={{'margin': '14px 0', 'padding': '20px' , 'gap': '8px'}}>
     <Text size='22' >Compra efetuada com sucesso</Text>
     <Text size='16' color='#515151'>****.****.****.{card.number.slice(-4)}</Text>
     <Text size='16' color='#515151'>{card.name}</Text>

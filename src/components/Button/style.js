@@ -14,7 +14,7 @@ export const StyleBtn = styled.button`
   cursor: pointer;
   background: ${(props) => props.color};
   
-  margin-top: 0.1rem;
+  margin-top: 1rem;
   border-radius: 4px;
   border: none;
 `;

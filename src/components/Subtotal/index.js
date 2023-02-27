@@ -59,8 +59,8 @@ function Subtotal() {
           </Text>
         </Line>
         <Line>
-          <Text bold>Subtotal</Text>
-          <Text bold>R${format(total)}</Text>
+          <Text size={16} bold>Subtotal</Text>
+          <Text size={16} bold>R${format(total)}</Text>
         </Line>
 
         <Button to={datasButton.to} color={datasButton.color}>
