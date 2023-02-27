@@ -7,6 +7,7 @@ const isActiveColor = (props) => {
 
 
 export const StyledHeader = styled.div`
+  position: sticky;
   background-color: #fff;
   box-shadow: 0px 2px 4px 0px #0000001a;
   height: 37px;
