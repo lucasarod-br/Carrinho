@@ -4,10 +4,10 @@ import styled from "styled-components";
 export const StyledProduct = styled.div`
   display: flex;
   justify-content: ${(props) =>
-    props.price ? "space-between" : "space-around"};
+    props.price ? "space-between" : "space-evenly"};
   align-items: center;
   gap: 7%;
-  max-width: 90%;
+  width: 100%;
   text-align: start;
 
   img {
@@ -26,6 +26,6 @@ export const StyledProduct = styled.div`
   }
 
   span {
-    max-width: 350px;
+    max-width: 360px;
   }
 `;
