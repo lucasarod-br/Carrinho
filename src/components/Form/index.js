@@ -32,11 +32,10 @@ function Form() {
   };
 
   return (
-    <Container style={{ paddingBottom: '8px' }}>
+    <Container style={{ paddingBottom: '12px' }}>
       <Text
         style={{
-          alignSelf: "flex-start",
-          margin: ' 4px auto'
+          margin: ' 0px auto 4px auto'
         }}
         size="18"
       >
