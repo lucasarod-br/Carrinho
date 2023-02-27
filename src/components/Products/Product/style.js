@@ -11,7 +11,18 @@ export const StyledProduct = styled.div`
   text-align: start;
 
   img {
-    height: 10vh;
+    width: 60px;
+    height: 60px;
+    @media (min-width:768px) {
+      width: 70px;
+    height: 70px;
+    }
+    @media (min-width:768px) {
+      width: 80px;
+    height: 80px;
+    }
+
+    
   }
 
   span {

@@ -3,7 +3,7 @@ export const StyleSubtotal = styled.div`
   box-sizing: border-box;
   
   width: 100%;
-  height: 28%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
