@@ -6,8 +6,9 @@ export const StyledForm = styled.form`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 15px;
+    gap: 7px;
     width: 90vw;
+    max-height: 46vh;
     
     div {
         display: flex;

@@ -4,15 +4,14 @@ import styled from "styled-components";
 export const StyledProduct = styled.div`
   display: flex;
   justify-content: ${(props) =>
-    props.price ? "space-evenly" : "space-around"};
+    props.price ? "space-between" : "space-around"};
   align-items: center;
-  gap: 5%;
-  width: 85%;
+  gap: 8%;
+  width: 70%;
   text-align: start;
-  vertical-align: middle;
 
   img {
-    height: 14vh;
+    height: 10vh;
   }
 
   span {

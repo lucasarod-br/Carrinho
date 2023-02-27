@@ -15,7 +15,7 @@ export const StyledHeader = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     height: 45px;
     gap: 2rem;
   }

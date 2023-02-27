@@ -10,7 +10,7 @@ function Product({ img, name, maxPrice, originalPrice, price }) {
     <StyledProduct>
       <img src={img} alt={name} />
 
-      <Text size="12" style={{ display: "inline-block", minWidth: '180px' }}>
+      <Text size="12" style={{ display: "inline-block", minWidth: '165px' }}>
         {name}
       </Text>
       {price &&

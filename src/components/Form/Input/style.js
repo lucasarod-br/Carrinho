@@ -16,7 +16,8 @@ export const StyledInput = styled.div`
 
   input {
     border-radius: 4px;
-    padding: 14px;
+    padding: 10px;
+    
     padding-right: 0;
     border: 1px solid #cccccc;
     width: ${(props) => (props.short ? "87%" : "95%")};

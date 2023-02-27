@@ -5,7 +5,7 @@ export const Body = styled.div`
 padding: 0;
   max-width: 100%;
   box-sizing: border-box;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

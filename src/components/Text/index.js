@@ -11,7 +11,7 @@ export const setSize = (props) => {
         return props.size ? props.size : "14"
     }
     else if (window.innerWidth <= 768) {
-        return props.size ? props.size *1.1 : "16"
+        return props.size ? props.size *1.07 : "16"
         
     }
     else if (window.innerWidth <= 1024) {

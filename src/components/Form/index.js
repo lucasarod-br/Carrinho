@@ -32,7 +32,7 @@ function Form() {
   };
 
   return (
-    <Container style={{ gap: "0rem" }}>
+    <Container style={{ paddingBottom: '8px' }}>
       <Text
         style={{
           alignSelf: "flex-start",
