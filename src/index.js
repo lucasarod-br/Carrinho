@@ -14,8 +14,8 @@ import { Body } from "./style";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
       <Body>
+    <Provider store={store}>
         <Router>
           <Routes>
             <Route path="/" element={<Header />}>
@@ -27,7 +27,7 @@ root.render(
             </Route>
           </Routes>
         </Router>
-      </Body>
     </Provider>
+      </Body>
   </React.StrictMode>
 );

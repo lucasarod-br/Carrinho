@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 
@@ -5,7 +6,7 @@ export const Body = styled.div`
 padding: 0;
   max-width: 100%;
   box-sizing: border-box;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

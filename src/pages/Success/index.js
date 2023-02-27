@@ -8,7 +8,7 @@ const Success = () => {
   const card = useSelector(state => state.card)
 console.log(card.name)
   return (
-    <>
+    <div style={{'display': 'flex', 'flexDirection': 'column', alignItems: 'center'}}>
     <Container style={{'margin': '14px 0', 'padding': '20px' , 'gap': '8px'}}>
     <Text size='22' >Compra efetuada com sucesso</Text>
     <Text size='16' color='#515151'>****.****.****.{card.number.slice(-4)}</Text>
@@ -17,7 +17,7 @@ console.log(card.name)
     </Container>
     <Products price={false}/>
 
-    </>
+    </div>
   )
 }
 

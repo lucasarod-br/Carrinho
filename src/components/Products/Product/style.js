@@ -6,8 +6,8 @@ export const StyledProduct = styled.div`
   justify-content: ${(props) =>
     props.price ? "space-between" : "space-around"};
   align-items: center;
-  gap: 8%;
-  width: 70%;
+  gap: 7%;
+  max-width: 90%;
   text-align: start;
 
   img {
