@@ -11,13 +11,13 @@ export const setSize = (props) => {
         return props.size ? props.size : "14"
     }
     else if (window.innerWidth <= 768) {
-        return props.size ? props.size *1.08 : "15"
+        return props.size ? props.size *1.08 : "14.8"
         
     }
     else if (window.innerWidth <= 1024) {
-        return props.size ?  props.size * 1.2 : '17';
+        return props.size ?  props.size * 1.16 : '15.5';
     }
     else {
-        return props.size ?  props.size * 1.22 : '19';
+        return props.size ?  props.size * 1.22 : '17';
     }
 }

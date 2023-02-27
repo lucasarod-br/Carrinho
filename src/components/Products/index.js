@@ -8,9 +8,9 @@ import { Text } from "components/Text/style";
 
   function Products({ price }) {
     const cartItems = useSelector((state) => state.cart.items);
-
+    const mb = (!price ? '20px' : '0px')
     return (
-      <Container style={{'gap': '4vh',  'padding': '24px 0', }}>
+      <Container style={{'gap': '50%', 'padding': '24px 0', 'marginBottom': mb }}>
         {!price && <Text style={{'alignSelf': 'flex-start', marginLeft: '36px'}} size='20'>Produtos</Text> }
         {cartItems.map((iten) => (
           <Product 

@@ -36,9 +36,9 @@ function Form() {
       <Text
         style={{
           padding: '14px 0 20px 0',
-          margin: ' 0px auto 4px auto'
+          margin: ' 0px auto 2px auto'
         }}
-        size="18"
+        size="17"
       >
         Cartão de crédito
       </Text>
